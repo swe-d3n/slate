@@ -10,6 +10,7 @@ import { TimelineView } from '@/components/ui/timeline-view';
 import { CalendarView } from '@/components/ui/calendar-view';
 import { AnalyticsView } from '@/components/ui/analytics-view';
 import { DateUtils } from '@/lib/dateUtils';
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -379,6 +380,7 @@ function App() {
         onConfirm={confirmDelete}
         onCancel={cancelDelete}
       />
+      <Analytics />
     </div>
   );
 }
